@@ -2,7 +2,7 @@ import React from 'react'
 import { Navigate, Route, Routes } from 'react-router'
 import MarvelPage from '../heroes/pages/MarvelPage'
 import DcPage from '../heroes/pages/DcPage'
-import Login from '../auth/Login'
+import Login from '../auth/pages/Login'
 import { Navbar } from '../ui'
 
 
