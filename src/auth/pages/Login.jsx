@@ -14,7 +14,7 @@ const Login = () => {
     <div className='container mt-5'>
       <h1>Login</h1>
       <hr />
-      <button className='btn btn-info btn-sm'
+      <button className='btn btn-info '
         onClick={onLogin}>
         Login
       </button>
