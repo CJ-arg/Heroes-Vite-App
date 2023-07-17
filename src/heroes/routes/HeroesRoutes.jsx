@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router'
-import { Navbar } from '../../ui'
+import { Navbar } from '../../ui/components'
 import MarvelPage from '../pages/MarvelPage'
 import DcPage from '../pages/DcPage'
 import React from 'react'
