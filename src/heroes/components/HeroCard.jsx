@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance, characters }) => {
 
-  const
+  const heroImageUrl = `/assets/heroes/${id}.jpg`
   return (
     <div className='col'>
       <div className='card'>
@@ -10,7 +10,7 @@ const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance, chara
         <div className='row no-gutters'>
           <div className='col-4'>
 
-            <img src="" alt={superhero} className='card-img' />
+            <img src={heroImageUrl} alt={superhero} className='card-img' />
 
 
           </div>
