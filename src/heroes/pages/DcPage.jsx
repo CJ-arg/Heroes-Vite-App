@@ -7,7 +7,7 @@ const DcPage = () => {
       <h1> DC Comics</h1>
       <hr />
       <ul>
-        <HeroeList publisher={{ publisher: "DC Comics" }} />
+        <HeroeList publisher={"DC Comics"} />
       </ul>
     </>
   )
