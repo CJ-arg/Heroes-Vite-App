@@ -15,7 +15,7 @@ const Hero = () => {
     return <Navigate to='/marvel' />
   }
   return (
-    <div className='row mt-5'>
+    <div className='row mt-5 '>
       <div className='col-4'>
         <img
           src={`/assets/heroes/${id}.jpg`}
@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       <div className='col-8'>
-        <h3>{hero.superhero}</h3>
+        <h3 className='  animate__animated animate__fadeIn'>{hero.superhero}</h3>
         <ul className='list-group list-group-flush'>
           <li className='list-group-item'> <b>Alter Ego:</b> {hero.alter_ego}</li>
           <li className='list-group-item'> <b>Publisher:</b> {hero.publisher}</li>
