@@ -6,11 +6,9 @@ import { AuthContext } from '../context/AuthContext';
 const Login = () => {
 
   const { login } = useContext(AuthContext)
-
   const navigate = useNavigate()
 
   const onLogin = () => {
-
     login('Carlos Janon')
     navigate('/', {
       replace: true,
