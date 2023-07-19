@@ -39,12 +39,13 @@ describe('Test on PublicRote', () => {
                 <h1>Ruta pública</h1>
               </PublicRoute>
             } />
-            <Route path='/marvel' element={<h1>Página Marvel</h1>} />
+            <Route path='/marvel' element={<h1>Marvel PAGE</h1>} />
           </Routes>
         </MemoryRouter>
 
       </AuthContext.Provider>
     );
     screen.debug()
+    expect(screen.getByText('Marvel PAGE')).toBeTruthy();
   })
 })
