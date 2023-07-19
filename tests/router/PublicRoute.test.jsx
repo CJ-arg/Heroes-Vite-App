@@ -3,14 +3,11 @@ import { PublicRoute } from "../../src/router/PublicRoute"
 import { AuthContext } from "../../src/auth/context/AuthContext"
 import { MemoryRouter, Route, Routes } from "react-router"
 
-
-
 describe('Test on PublicRote', () => {
   test('should show children if not Auth', () => {
     const contextValue = {
       logged: false
     }
-
     render(
       <AuthContext.Provider value={contextValue}>
         <PublicRoute>
