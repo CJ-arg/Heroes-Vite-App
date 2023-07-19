@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react"
 import { PublicRoute } from "../../src/router/PublicRoute"
 import { AuthContext } from "../../src/auth/context/AuthContext"
 import { MemoryRouter, Route, Routes } from "react-router"
+import React from "react"
 
 describe('Test on PublicRote', () => {
   test('should show children if not Auth', () => {
@@ -31,7 +32,7 @@ describe('Test on PublicRote', () => {
       <AuthContext.Provider value={contextValue}>
         <MemoryRouter initialEntries={['/login']}>
           <Routes>
-            <Route path='login' element={
+            <Route path='/login' element={
               <PublicRoute>
                 <h1>Ruta pública</h1>
               </PublicRoute>

@@ -13,7 +13,6 @@ const AppRouter = () => {
           <PublicRoute>
             <Login />
           </PublicRoute>} />
-
         <Route path='/*' element={
           <PrivateRoute>
             <HeroesRoutes />
