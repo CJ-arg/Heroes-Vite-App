@@ -3,8 +3,8 @@ import { Navbar } from '../../ui/components'
 import MarvelPage from '../pages/MarvelPage'
 import DcPage from '../pages/DcPage'
 import React from 'react'
-import Search from '../pages/search'
 import Hero from '../pages/Hero'
+import { SearchPage } from '../pages/SearchPage'
 
 
 const HeroesRoutes = () => {
@@ -15,7 +15,7 @@ const HeroesRoutes = () => {
         <Routes>
           <Route path='marvel' element={<MarvelPage />} />
           <Route path='dc' element={<DcPage />} />
-          <Route path='search' element={<Search />} />
+          <Route path='search' element={<SearchPage />} />
           <Route path='hero/:id' element={<Hero />} />
           <Route path='/' element={<Navigate to='/marvel' />} />
         </Routes>
